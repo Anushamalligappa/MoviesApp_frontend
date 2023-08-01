@@ -40,25 +40,25 @@ setMovie({...movie,[name]:value})
 
 
   return (
-    <div className="text-pink-700">
-      <h2>UpdateMovie</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="container text-pink-700 flex flex-col justify-center items-center ml-80 ">
+      
+      <form onSubmit={handleSubmit} className="flex flex-col w-60 mb-96 items-center justify-center text-3xl mt-60">
         <label htmlFor="title">Title</label>
-          <input type= "text" name="title" value={movie?.title } onChange={handleChange} required/>
+          <input type= "text" name="title" value={movie?.title } onChange={handleChange} className=" w-80 h-10 border border-gray-400 py-1 px-2 rounded-md"required/>
 
           <label htmlFor="director">Director</label>
-          <input type="text" name="director" value={movie.director} onChange={handleChange} required/>
+          <input type="text" name="director" value={movie.director} onChange={handleChange} className=" w-80 h-10 border border-gray-400 py-1 px-2 rounded-md" required/>
 
           <label htmlFor="year">Year</label>
-          <input type="text" name="year" value={movie.year}onChange={handleChange} required/>
+          <input type="text" name="year" value={movie.year}onChange={handleChange} className=" w-80 h-10 border border-gray-400 py-1 px-2 rounded-md"required/>
 
           <label htmlFor="rating">Rating</label>
-          <input type="text" name="rating" value={movie.rating} onChange={handleChange} required/>
+          <input type="text" name="rating" value={movie.rating} onChange={handleChange} className=" w-80 h-10 border border-gray-400 py-1 px-2 rounded-md"required/>
 
           <label htmlFor="poster">Poster</label>
-          <input type="text" name="poster" value={movie.poster} onChange={handleChange} required/>
+          <input type="text" name="poster" value={movie.poster} onChange={handleChange} className=" w-80 h-10 border border-gray-400 py-1 px-2 rounded-md"required/>
 
-          <button>Update Movie</button>
+          <button className="bg-yellow">Update Movie</button>
 
       </form>
       

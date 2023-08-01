@@ -7,7 +7,7 @@ import SignIn from './SignIn';
 
 const Main = () => {
   return (
-    <main className="bg-blue-900 ">
+    <main className="bg-black height-80">
      <Routes>
       <Route path="/" element={<Movies />} />
       <Route path="/movies/new" element={<NewMovie />}/>
